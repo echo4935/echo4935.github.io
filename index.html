@@ -1,0 +1,1758 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>警花张津渝 - 品牌影像门户,真实记录与成长陪伴</title>
+<meta name="description" content="警花张津渝官方网站，专注警务纪实影像与真实人物故事的视频品牌平台，深耕原创内容生态，陪伴每一位关注者成长。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4a6d'/%3E%3Ccircle cx='32' cy='26' r='10' fill='%23f5c26b'/%3E%3Cpath d='M16 52c4-12 28-12 32 0z' fill='%23f5c26b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --zj-navy:#22364f;
+  --zj-navy-2:#2f4a6d;
+  --zj-gold:#e9a93b;
+  --zj-gold-soft:#f5c26b;
+  --zj-mist:#eef2f7;
+  --zj-paper:#fbfcfe;
+  --zj-ink:#1c2633;
+  --zj-ink-soft:#4b5a6d;
+  --zj-line:#d8e0ea;
+  --zj-crimson:#b8452f;
+  --zj-radius:16px;
+  --zj-shadow:0 12px 32px rgba(28,38,51,.10);
+  --zj-max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Source Han Sans SC",system-ui,sans-serif;
+  background:var(--zj-paper);
+  color:var(--zj-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+ul{list-style:none;}
+.zj-scroll-offset{scroll-margin-top:132px;}
+
+/* ============ 吸顶容器 ============ */
+.zj-sticky-top{position:sticky;top:0;z-index:900;}
+
+.zj-announce{
+  background:linear-gradient(90deg,var(--zj-navy) 0%,var(--zj-navy-2) 60%,#3c5a80 100%);
+  color:#e8eef7;
+  font-size:13.5px;
+  letter-spacing:.2px;
+}
+.zj-announce-inner{
+  max-width:var(--zj-max);margin:0 auto;padding:9px 20px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.zj-announce-tag{
+  background:var(--zj-gold);color:#2a1c05;font-weight:700;
+  padding:2px 10px;border-radius:999px;font-size:12px;flex-shrink:0;
+}
+.zj-announce-text{flex:1;min-width:200px;}
+.zj-announce-text b{color:var(--zj-gold-soft);font-weight:600;}
+.zj-announce-link{
+  color:var(--zj-gold-soft);font-size:12.5px;border-bottom:1px dashed rgba(245,194,107,.55);
+  padding-bottom:1px;white-space:nowrap;
+}
+.zj-announce-close{
+  color:#c6d3e3;font-size:16px;line-height:1;padding:2px 6px;border-radius:6px;
+}
+.zj-announce-close:hover{background:rgba(255,255,255,.12);color:#fff;}
+
+/* ============ 页头 ============ */
+.zj-header{
+  background:rgba(251,252,254,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--zj-line);
+}
+.zj-header-inner{
+  max-width:var(--zj-max);margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:22px;
+}
+.zj-brand{display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.zj-brand-mark{
+  width:42px;height:42px;border-radius:12px;
+  background:linear-gradient(140deg,var(--zj-navy) 0%,var(--zj-navy-2) 70%);
+  display:grid;place-items:center;color:var(--zj-gold-soft);
+  font-weight:800;font-size:18px;letter-spacing:1px;
+  box-shadow:0 6px 14px rgba(34,54,79,.28);
+}
+.zj-brand-name{font-size:17px;font-weight:800;letter-spacing:.5px;line-height:1.2;}
+.zj-brand-sub{font-size:11.5px;color:var(--zj-ink-soft);letter-spacing:2px;}
+.zj-nav{display:flex;align-items:center;gap:4px;margin-left:8px;flex-wrap:wrap;}
+.zj-nav a{
+  font-size:14.5px;color:var(--zj-ink-soft);padding:7px 12px;border-radius:9px;
+  transition:.2s;white-space:nowrap;
+}
+.zj-nav a:hover,.zj-nav a.zj-nav-active{color:var(--zj-navy);background:var(--zj-mist);font-weight:600;}
+.zj-header-tools{margin-left:auto;display:flex;align-items:center;gap:10px;}
+.zj-search{
+  display:flex;align-items:center;background:#fff;border:1px solid var(--zj-line);
+  border-radius:999px;padding:5px 6px 5px 14px;gap:6px;transition:.2s;
+}
+.zj-search:focus-within{border-color:var(--zj-navy-2);box-shadow:0 0 0 3px rgba(47,74,109,.12);}
+.zj-search input{
+  border:none;outline:none;font-size:14px;width:150px;background:transparent;color:var(--zj-ink);
+}
+.zj-search input::placeholder{color:#98a4b3;}
+.zj-search-btn{
+  background:var(--zj-navy);color:#fff;border-radius:999px;
+  padding:6px 15px;font-size:13.5px;transition:.2s;
+}
+.zj-search-btn:hover{background:var(--zj-navy-2);}
+.zj-menu-toggle{
+  display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--zj-line);
+  background:#fff;flex-direction:column;justify-content:center;align-items:center;gap:4px;
+}
+.zj-menu-toggle span{width:18px;height:2px;background:var(--zj-navy);border-radius:2px;transition:.2s;}
+.zj-search-hint{
+  font-size:12.5px;color:var(--zj-ink-soft);padding:0 20px;
+  max-width:var(--zj-max);margin:0 auto;
+}
+.zj-search-hint .zj-hint-box{
+  display:none;background:#fff;border:1px solid var(--zj-line);border-radius:10px;
+  padding:8px 14px;margin-bottom:10px;box-shadow:var(--zj-shadow);
+}
+.zj-search-hint .zj-hint-box.zj-show{display:block;}
+
+/* ============ 通用 ============ */
+.zj-wrap{max-width:var(--zj-max);margin:0 auto;padding:0 20px;}
+.zj-section{padding:64px 0;}
+.zj-section-alt{background:var(--zj-mist);}
+.zj-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:2.5px;color:var(--zj-navy-2);font-weight:700;
+  text-transform:uppercase;margin-bottom:12px;
+}
+.zj-eyebrow::before{content:"";width:26px;height:2px;background:var(--zj-gold);border-radius:2px;}
+h2.zj-h2{font-size:clamp(22px,3vw,30px);line-height:1.35;letter-spacing:.3px;margin-bottom:12px;font-weight:800;}
+.zj-lead{font-size:15.5px;color:var(--zj-ink-soft);max-width:780px;}
+.zj-section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:32px;}
+.zj-more-link{
+  font-size:14px;color:var(--zj-navy-2);font-weight:600;border-bottom:1.5px solid var(--zj-gold-soft);
+  padding-bottom:2px;white-space:nowrap;
+}
+.zj-more-link:hover{color:var(--zj-crimson);}
+.zj-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 24px;border-radius:999px;
+  font-size:14.5px;font-weight:600;transition:.22s;
+}
+.zj-btn-primary{background:var(--zj-navy);color:#fff;box-shadow:0 8px 20px rgba(34,54,79,.24);}
+.zj-btn-primary:hover{background:var(--zj-navy-2);transform:translateY(-2px);}
+.zj-btn-ghost{background:#fff;color:var(--zj-navy);border:1.5px solid var(--zj-line);}
+.zj-btn-ghost:hover{border-color:var(--zj-navy-2);background:var(--zj-mist);}
+.zj-btn-gold{background:var(--zj-gold);color:#2a1c05;box-shadow:0 8px 20px rgba(233,169,59,.35);}
+.zj-btn-gold:hover{background:var(--zj-gold-soft);transform:translateY(-2px);}
+
+/* ============ Hero ============ */
+.zj-hero{
+  position:relative;overflow:hidden;
+  background:radial-gradient(900px 480px at 88% -10%,rgba(233,169,59,.18),transparent 60%),
+             linear-gradient(160deg,#f4f8fc 0%,#e9eff6 55%,#f6f8fb 100%);
+  border-bottom:1px solid var(--zj-line);
+}
+.zj-hero-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;
+  padding:60px 0 66px;
+}
+.zj-hero h1{
+  font-size:clamp(34px,5vw,56px);line-height:1.16;letter-spacing:1px;font-weight:900;
+  color:var(--zj-navy);margin-bottom:8px;
+}
+.zj-hero-slogan{
+  font-size:clamp(16px,2vw,20px);color:var(--zj-crimson);font-weight:700;
+  letter-spacing:1px;margin-bottom:18px;
+}
+.zj-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--zj-line);
+  border-radius:999px;padding:6px 16px;font-size:12.5px;font-weight:700;color:var(--zj-navy-2);
+  letter-spacing:1px;margin-bottom:20px;box-shadow:0 4px 14px rgba(28,38,51,.06);
+}
+.zj-hero-badge i{width:8px;height:8px;border-radius:50%;background:var(--zj-gold);display:inline-block;}
+.zj-hero-intro{font-size:15.5px;color:var(--zj-ink-soft);margin-bottom:26px;max-width:560px;}
+.zj-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px;}
+.zj-hero-stats{display:flex;gap:34px;flex-wrap:wrap;}
+.zj-stat-num{font-size:26px;font-weight:900;color:var(--zj-navy);letter-spacing:.5px;line-height:1.2;}
+.zj-stat-num small{font-size:13px;font-weight:700;color:var(--zj-gold);margin-left:3px;}
+.zj-stat-label{font-size:12.5px;color:var(--zj-ink-soft);letter-spacing:1px;}
+.zj-hero-visual{position:relative;}
+.zj-hero-cover{
+  border-radius:22px;overflow:hidden;box-shadow:0 26px 60px rgba(34,54,79,.24);
+  border:6px solid #fff;
+}
+.zj-hero-cover svg{display:block;width:100%;height:auto;}
+.zj-hero-float{
+  position:absolute;left:-22px;bottom:26px;background:#fff;border-radius:14px;
+  padding:12px 18px;box-shadow:var(--zj-shadow);display:flex;align-items:center;gap:12px;
+  border:1px solid var(--zj-line);
+}
+.zj-hero-float-icon{
+  width:38px;height:38px;border-radius:10px;background:var(--zj-mist);
+  display:grid;place-items:center;color:var(--zj-navy);font-weight:800;font-size:16px;
+}
+.zj-hero-float b{display:block;font-size:14px;}
+.zj-hero-float span{font-size:12px;color:var(--zj-ink-soft);}
+
+/* ============ 深度解析 ============ */
+.zj-about{background:#fff;border-bottom:1px solid var(--zj-line);}
+.zj-about-inner{padding:64px 0;}
+.zj-about-cols{display:grid;grid-template-columns:200px 1fr;gap:44px;align-items:start;}
+.zj-about-aside{
+  background:linear-gradient(160deg,var(--zj-navy) 0%,var(--zj-navy-2) 100%);
+  color:#e9eff7;border-radius:var(--zj-radius);padding:26px 22px;
+  box-shadow:var(--zj-shadow);position:sticky;top:150px;
+}
+.zj-about-aside h3{font-size:16px;margin-bottom:14px;color:var(--zj-gold-soft);letter-spacing:1px;}
+.zj-about-aside li{font-size:13.5px;padding:7px 0;border-bottom:1px dashed rgba(255,255,255,.18);color:#cfdaea;}
+.zj-about-aside li:last-child{border-bottom:none;}
+.zj-about-aside .zj-aside-note{font-size:12px;color:#a9bbd0;margin-top:14px;line-height:1.7;}
+.zj-about-body h2{margin-bottom:18px;}
+.zj-about-body p{font-size:15px;color:var(--zj-ink-soft);margin-bottom:16px;text-align:justify;}
+.zj-about-body p b{color:var(--zj-navy);font-weight:700;}
+.zj-about-quote{
+  border-left:4px solid var(--zj-gold);background:var(--zj-mist);
+  padding:16px 20px;border-radius:0 12px 12px 0;font-size:14.5px;color:var(--zj-navy);
+  margin:22px 0;font-weight:600;
+}
+
+/* ============ 焦点内容 ============ */
+.zj-focus{background:var(--zj-paper);}
+.zj-focus-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:26px;}
+.zj-focus-main{
+  position:relative;border-radius:var(--zj-radius);overflow:hidden;box-shadow:var(--zj-shadow);
+  background:#000;color:#fff;
+}
+.zj-focus-main svg{width:100%;height:100%;object-fit:cover;display:block;min-height:340px;}
+.zj-focus-overlay{
+  position:absolute;inset:auto 0 0 0;padding:100px 26px 24px;
+  background:linear-gradient(180deg,transparent,rgba(12,20,32,.92));
+}
+.zj-focus-tag{
+  display:inline-block;background:var(--zj-gold);color:#2a1c05;font-size:12px;font-weight:800;
+  padding:3px 12px;border-radius:999px;margin-bottom:10px;letter-spacing:.5px;
+}
+.zj-focus-overlay h3{font-size:22px;line-height:1.4;margin-bottom:8px;font-weight:800;}
+.zj-focus-overlay p{font-size:13.5px;color:#cfdaea;margin-bottom:14px;}
+.zj-focus-meta{display:flex;gap:16px;font-size:12.5px;color:#a9bbd0;flex-wrap:wrap;}
+.zj-focus-side{display:grid;grid-template-rows:repeat(2,1fr);gap:26px;}
+.zj-focus-mini{
+  display:flex;gap:16px;background:#fff;border:1px solid var(--zj-line);border-radius:var(--zj-radius);
+  overflow:hidden;box-shadow:0 6px 18px rgba(28,38,51,.06);transition:.22s;
+}
+.zj-focus-mini:hover{transform:translateY(-3px);box-shadow:var(--zj-shadow);border-color:#c3d0de;}
+.zj-focus-mini-img{width:44%;flex-shrink:0;background:#dde5ee;}
+.zj-focus-mini-img svg{width:100%;height:100%;display:block;min-height:100px;}
+.zj-focus-mini-body{padding:16px 16px 16px 0;display:flex;flex-direction:column;justify-content:center;gap:6px;}
+.zj-focus-mini-body h3{font-size:15.5px;line-height:1.45;font-weight:700;}
+.zj-focus-mini-body p{font-size:12.5px;color:var(--zj-ink-soft);}
+.zj-mini-meta{font-size:12px;color:#8b98a8;}
+
+/* ============ 热门视频流 ============ */
+.zj-videos{background:var(--zj-mist);}
+.zj-tags-filter{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;}
+.zj-tags-filter button{
+  background:#fff;border:1px solid var(--zj-line);border-radius:999px;
+  padding:7px 18px;font-size:13.5px;color:var(--zj-ink-soft);transition:.2s;
+}
+.zj-tags-filter button:hover{border-color:var(--zj-navy-2);color:var(--zj-navy);}
+.zj-tags-filter button.zj-tag-on{background:var(--zj-navy);color:#fff;border-color:var(--zj-navy);font-weight:600;}
+.zj-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.zj-video-card{
+  background:#fff;border-radius:var(--zj-radius);overflow:hidden;border:1px solid var(--zj-line);
+  display:flex;flex-direction:column;transition:.24s;box-shadow:0 4px 14px rgba(28,38,51,.05);
+}
+.zj-video-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(34,54,79,.16);border-color:#c3d0de;}
+.zj-card-cover{position:relative;background:#dde5ee;}
+.zj-card-cover svg{width:100%;height:auto;display:block;}
+.zj-card-cover .zj-play{
+  position:absolute;inset:0;display:grid;place-items:center;opacity:0;transition:.25s;
+  background:rgba(20,32,48,.28);
+}
+.zj-video-card:hover .zj-play{opacity:1;}
+.zj-play-icon{
+  width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.92);
+  display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.3);
+}
+.zj-play-icon::after{
+  content:"";border-style:solid;border-width:9px 0 9px 15px;
+  border-color:transparent transparent transparent var(--zj-navy);margin-left:4px;
+}
+.zj-cover-tag{
+  position:absolute;top:12px;left:12px;background:rgba(20,32,48,.78);color:#fff;
+  font-size:11.5px;padding:3px 10px;border-radius:999px;letter-spacing:.5px;
+  backdrop-filter:blur(4px);
+}
+.zj-cover-dur{
+  position:absolute;bottom:10px;right:12px;background:rgba(20,32,48,.78);color:#fff;
+  font-size:11.5px;padding:2px 8px;border-radius:6px;font-variant-numeric:tabular-nums;
+}
+.zj-card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.zj-card-body h3{font-size:16px;line-height:1.45;font-weight:700;}
+.zj-card-body p{font-size:13px;color:var(--zj-ink-soft);flex:1;}
+.zj-card-foot{display:flex;align-items:center;gap:10px;font-size:12.5px;color:#8b98a8;margin-top:4px;}
+.zj-avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  font-size:12px;font-weight:800;color:#fff;flex-shrink:0;
+}
+.zj-card-actions{display:flex;gap:8px;margin-top:10px;border-top:1px dashed var(--zj-line);padding-top:12px;}
+.zj-react{
+  display:inline-flex;align-items:center;gap:5px;font-size:12.5px;color:var(--zj-ink-soft);
+  padding:5px 10px;border-radius:8px;transition:.18s;
+}
+.zj-react:hover{background:var(--zj-mist);color:var(--zj-navy);}
+.zj-react.zj-liked{color:var(--zj-crimson);font-weight:700;}
+.zj-react.zj-saved{color:var(--zj-gold);font-weight:700;}
+
+/* ============ 创作者矩阵 ============ */
+.zj-creators{background:#fff;}
+.zj-creator-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.zj-creator-card{
+  border:1px solid var(--zj-line);border-radius:var(--zj-radius);padding:24px 22px;
+  background:linear-gradient(180deg,#fff 0%,#fafcfe 100%);transition:.24s;position:relative;overflow:hidden;
+}
+.zj-creator-card::before{
+  content:"";position:absolute;top:0;left:0;width:100%;height:4px;
+  background:linear-gradient(90deg,var(--zj-gold),var(--zj-crimson));
+  opacity:0;transition:.24s;
+}
+.zj-creator-card:hover{transform:translateY(-4px);box-shadow:var(--zj-shadow);border-color:#c3d0de;}
+.zj-creator-card:hover::before{opacity:1;}
+.zj-creator-head{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+.zj-creator-avatar{
+  width:58px;height:58px;border-radius:16px;display:grid;place-items:center;
+  font-size:22px;font-weight:900;color:#fff;flex-shrink:0;box-shadow:0 8px 18px rgba(34,54,79,.22);
+}
+.zj-creator-head h3{font-size:17px;font-weight:800;line-height:1.3;}
+.zj-creator-field{font-size:12.5px;color:var(--zj-gold);font-weight:700;letter-spacing:.5px;}
+.zj-creator-card p{font-size:13.5px;color:var(--zj-ink-soft);margin-bottom:14px;}
+.zj-creator-nums{display:flex;gap:20px;font-size:12.5px;color:var(--zj-ink-soft);margin-bottom:14px;}
+.zj-creator-nums b{display:block;font-size:15px;color:var(--zj-navy);}
+.zj-creator-btn{
+  width:100%;padding:9px;border-radius:10px;background:var(--zj-mist);color:var(--zj-navy);
+  font-size:13.5px;font-weight:600;transition:.2s;
+}
+.zj-creator-btn:hover{background:var(--zj-navy);color:#fff;}
+
+/* ============ 品牌故事 ============ */
+.zj-story{background:var(--zj-navy);color:#e9eff7;position:relative;overflow:hidden;}
+.zj-story::after{
+  content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(233,169,59,.22),transparent 65%);
+}
+.zj-story .zj-eyebrow{color:var(--zj-gold-soft);}
+.zj-story .zj-eyebrow::before{background:var(--zj-gold-soft);}
+.zj-story-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;position:relative;z-index:1;}
+.zj-story h2{color:#fff;margin-bottom:18px;}
+.zj-story p{font-size:15px;color:#c2d0e0;margin-bottom:15px;text-align:justify;}
+.zj-story p b{color:var(--zj-gold-soft);}
+.zj-story-values{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px;}
+.zj-value-chip{
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);
+  border-radius:12px;padding:14px 16px;font-size:13.5px;color:#dbe6f2;
+}
+.zj-value-chip b{display:block;color:var(--zj-gold-soft);font-size:14.5px;margin-bottom:4px;}
+.zj-story-visual{display:grid;gap:16px;}
+.zj-story-img{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.14);}
+.zj-story-img svg{width:100%;display:block;}
+
+/* ============ 评价 ============ */
+.zj-reviews{background:var(--zj-paper);}
+.zj-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.zj-review-card{
+  background:#fff;border:1px solid var(--zj-line);border-radius:var(--zj-radius);
+  padding:22px;font-size:14px;color:var(--zj-ink-soft);position:relative;transition:.22s;
+}
+.zj-review-card:hover{box-shadow:var(--zj-shadow);transform:translateY(-3px);}
+.zj-review-card::before{
+  content:"“";position:absolute;top:2px;right:18px;font-size:52px;color:var(--zj-mist);
+  font-family:Georgia,serif;line-height:1;
+}
+.zj-review-user{display:flex;align-items:center;gap:10px;margin-top:16px;padding-top:14px;border-top:1px dashed var(--zj-line);}
+.zj-review-user b{font-size:13.5px;color:var(--zj-ink);display:block;}
+.zj-review-user span{font-size:12px;color:#9aa7b6;}
+.zj-review-stars{color:var(--zj-gold);font-size:13px;letter-spacing:1px;margin-bottom:10px;}
+
+/* ============ FAQ ============ */
+.zj-faq{background:var(--zj-mist);}
+.zj-faq-list{display:grid;gap:12px;max-width:860px;}
+.zj-faq-item{
+  background:#fff;border:1px solid var(--zj-line);border-radius:12px;overflow:hidden;
+  transition:.2s;
+}
+.zj-faq-item[open]{border-color:var(--zj-navy-2);box-shadow:0 8px 22px rgba(34,54,79,.10);}
+.zj-faq-item summary{
+  list-style:none;cursor:pointer;padding:16px 22px;font-size:15px;font-weight:700;color:var(--zj-navy);
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.zj-faq-item summary::-webkit-details-marker{display:none;}
+.zj-faq-item summary::after{
+  content:"+";font-size:20px;color:var(--zj-gold);font-weight:400;line-height:1;transition:.2s;flex-shrink:0;
+}
+.zj-faq-item[open] summary::after{content:"−";}
+.zj-faq-item .zj-faq-answer{padding:0 22px 18px;font-size:14px;color:var(--zj-ink-soft);}
+
+/* ============ 动态 & 联系 ============ */
+.zj-news{background:#fff;}
+.zj-news-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;}
+.zj-timeline{position:relative;padding-left:24px;}
+.zj-timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;background:var(--zj-line);}
+.zj-tl-item{position:relative;padding-bottom:24px;}
+.zj-tl-item::before{
+  content:"";position:absolute;left:-24px;top:6px;width:12px;height:12px;border-radius:50%;
+  background:var(--zj-gold);border:3px solid #fff;box-shadow:0 0 0 2px var(--zj-gold-soft);
+}
+.zj-tl-date{font-size:12.5px;color:var(--zj-crimson);font-weight:700;letter-spacing:.5px;}
+.zj-tl-item h3{font-size:15.5px;margin:2px 0 5px;font-weight:700;}
+.zj-tl-item p{font-size:13.5px;color:var(--zj-ink-soft);}
+.zj-contact-card{
+  background:linear-gradient(160deg,var(--zj-navy) 0%,var(--zj-navy-2) 100%);
+  color:#e9eff7;border-radius:var(--zj-radius);padding:32px 28px;box-shadow:var(--zj-shadow);
+}
+.zj-contact-card h3{color:#fff;font-size:20px;margin-bottom:8px;}
+.zj-contact-card p{font-size:14px;color:#c2d0e0;margin-bottom:20px;}
+.zj-contact-row{display:flex;justify-content:space-between;font-size:13.5px;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,.16);}
+.zj-contact-row:last-of-type{border-bottom:none;}
+.zj-contact-row span{color:#a9bbd0;}
+.zj-contact-row b{color:var(--zj-gold-soft);font-weight:600;}
+.zj-contact-actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap;}
+
+/* ============ 页脚 ============ */
+.zj-footer{background:#1a2838;color:#a9bbd0;padding:52px 0 0;font-size:13.5px;}
+.zj-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-bottom:36px;}
+.zj-footer h4{color:#fff;font-size:14.5px;margin-bottom:14px;letter-spacing:1px;}
+.zj-footer li{padding:5px 0;}
+.zj-footer a:hover{color:var(--zj-gold-soft);}
+.zj-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+.zj-footer-brand .zj-brand-mark{box-shadow:none;}
+.zj-footer-brand b{color:#fff;font-size:16px;letter-spacing:.5px;}
+.zj-footer-desc{line-height:1.8;color:#8b9cb0;margin-bottom:16px;}
+.zj-footer-info{border-top:1px solid rgba(255,255,255,.1);padding:18px 0 26px;color:#7f91a6;font-size:12.5px;display:flex;flex-wrap:wrap;gap:8px 22px;justify-content:space-between;}
+
+/* ============ 返回顶部 & Toast ============ */
+.zj-backtop{
+  position:fixed;right:24px;bottom:28px;width:46px;height:46px;border-radius:50%;
+  background:var(--zj-navy);color:#fff;display:grid;place-items:center;font-size:18px;
+  box-shadow:0 10px 26px rgba(34,54,79,.36);opacity:0;visibility:hidden;transform:translateY(10px);
+  transition:.28s;z-index:800;
+}
+.zj-backtop.zj-show{opacity:1;visibility:visible;transform:translateY(0);}
+.zj-backtop:hover{background:var(--zj-navy-2);}
+.zj-toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);z-index:1200;
+  background:rgba(20,32,48,.94);color:#fff;font-size:13.5px;padding:11px 22px;border-radius:999px;
+  opacity:0;visibility:hidden;transition:.3s;box-shadow:0 12px 30px rgba(0,0,0,.3);white-space:nowrap;
+}
+.zj-toast.zj-show{opacity:1;visibility:visible;transform:translate(-50%,0);}
+
+/* ============ 弹窗 ============ */
+.zj-modal{
+  position:fixed;inset:0;background:rgba(16,26,40,.55);backdrop-filter:blur(3px);
+  display:grid;place-items:center;z-index:1100;opacity:0;visibility:hidden;transition:.24s;padding:20px;
+}
+.zj-modal.zj-show{opacity:1;visibility:visible;}
+.zj-modal-card{
+  background:#fff;border-radius:18px;max-width:480px;width:100%;padding:30px 28px;
+  box-shadow:0 30px 80px rgba(0,0,0,.3);transform:translateY(14px);transition:.28s;position:relative;
+}
+.zj-modal.zj-show .zj-modal-card{transform:translateY(0);}
+.zj-modal-card h3{font-size:19px;margin-bottom:10px;color:var(--zj-navy);}
+.zj-modal-card p{font-size:14px;color:var(--zj-ink-soft);margin-bottom:18px;}
+.zj-modal-close{position:absolute;top:14px;right:16px;font-size:20px;color:#93a1b2;line-height:1;}
+.zj-modal-close:hover{color:var(--zj-crimson);}
+.zj-modal-field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;font-size:13.5px;color:var(--zj-ink-soft);}
+.zj-modal-field input,.zj-modal-field textarea{
+  border:1px solid var(--zj-line);border-radius:10px;padding:10px 14px;font-size:14px;
+  font-family:inherit;outline:none;transition:.2s;background:var(--zj-paper);
+}
+.zj-modal-field input:focus,.zj-modal-field textarea:focus{border-color:var(--zj-navy-2);box-shadow:0 0 0 3px rgba(47,74,109,.12);}
+
+/* ============ 响应式 ============ */
+@media (max-width:1020px){
+  .zj-hero-grid{grid-template-columns:1fr;gap:36px;padding:44px 0 52px;}
+  .zj-hero-float{left:12px;}
+  .zj-focus-grid{grid-template-columns:1fr;}
+  .zj-video-grid{grid-template-columns:repeat(2,1fr);}
+  .zj-creator-grid{grid-template-columns:repeat(2,1fr);}
+  .zj-review-grid{grid-template-columns:repeat(2,1fr);}
+  .zj-about-cols{grid-template-columns:1fr;}
+  .zj-about-aside{position:static;}
+  .zj-story-grid{grid-template-columns:1fr;}
+  .zj-news-grid{grid-template-columns:1fr;}
+  .zj-footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:780px){
+  .zj-header-inner{flex-wrap:wrap;gap:12px;}
+  .zj-menu-toggle{display:flex;margin-left:auto;}
+  .zj-header-tools{order:4;width:100%;margin-left:0;}
+  .zj-search{width:100%;}
+  .zj-search input{width:100%;flex:1;}
+  .zj-nav{
+    order:5;width:100%;display:none;flex-direction:column;align-items:stretch;
+    background:#fff;border:1px solid var(--zj-line);border-radius:12px;padding:8px;margin-top:4px;
+  }
+  .zj-nav.zj-nav-open{display:flex;}
+  .zj-nav a{padding:11px 14px;}
+  .zj-video-grid,.zj-creator-grid,.zj-review-grid{grid-template-columns:1fr;}
+  .zj-focus-mini{flex-direction:column;}
+  .zj-focus-mini-img{width:100%;}
+  .zj-focus-mini-img svg{min-height:150px;}
+  .zj-focus-mini-body{padding:16px;}
+  .zj-hero-stats{gap:22px;}
+  .zj-section{padding:46px 0;}
+  .zj-about-body p{text-align:left;}
+  .zj-footer-grid{grid-template-columns:1fr;}
+  .zj-story-values{grid-template-columns:1fr;}
+  .zj-announce-inner{font-size:12.5px;padding:8px 14px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶：公告条 + 页头 -->
+<div class="zj-sticky-top">
+  <div class="zj-announce" id="zjAnnounce">
+    <div class="zj-announce-inner">
+      <span class="zj-announce-tag">官方发布</span>
+      <span class="zj-announce-text">新增专题《<b>十六小时·城市夜巡</b>》全 4 集已更新；创作者扶持计划第 3 期开放报名；品牌年度短片《<b>平凡之光</b>》上线预告。</span>
+      <a href="#zjNews" class="zj-announce-link">查看动态 ›</a>
+      <button class="zj-announce-close" id="zjAnnounceClose" aria-label="关闭公告">×</button>
+    </div>
+  </div>
+  <header class="zj-header">
+    <div class="zj-header-inner">
+      <a href="#zjTop" class="zj-brand" aria-label="警花张津渝品牌官网首页">
+        <span class="zj-brand-mark">津</span>
+        <span>
+          <span class="zj-brand-name">警花张津渝</span>
+          <span class="zj-brand-sub">品牌影像门户</span>
+        </span>
+      </a>
+      <nav class="zj-nav" id="zjNav" aria-label="主导航">
+        <a href="#zjTop" class="zj-nav-active">首页</a>
+        <a href="#zjFocus">影像焦点</a>
+        <a href="#zjVideos">热门内容</a>
+        <a href="#zjCreators">创作者</a>
+        <a href="#zjStory">品牌故事</a>
+        <a href="#zjNews">企业动态</a>
+        <a href="#zjFaq">帮助</a>
+        <a href="#zjContact">联系</a>
+      </nav>
+      <div class="zj-header-tools">
+        <form class="zj-search" id="zjSearchForm" role="search">
+          <input type="search" id="zjSearchInput" placeholder="搜索影像、专题、创作者" aria-label="站内搜索">
+          <button class="zj-search-btn" type="submit">搜索</button>
+        </form>
+        <button class="zj-menu-toggle" id="zjMenuToggle" aria-label="展开导航" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="zj-search-hint">
+      <div class="zj-hint-box" id="zjHintBox"></div>
+    </div>
+  </header>
+</div>
+
+<main id="zjTop">
+
+  <!-- Hero -->
+  <section class="zj-hero zj-scroll-offset">
+    <div class="zj-wrap">
+      <div class="zj-hero-grid">
+        <div class="zj-hero-copy">
+          <span class="zj-hero-badge"><i></i>官方网站 · 企业级影像品牌</span>
+          <h1>警花张津渝</h1>
+          <p class="zj-hero-slogan">以真实为镜，记录每一份坚守与温度</p>
+          <p class="zj-hero-intro">
+            作为深耕警务纪实垂类的视频品牌官网，我们以原创影像连接一线故事与大众理解，构建专业、正版、高清的内容生态。平台持续运营多年，坚持用户至上与匠心制作，让每一次记录都值得信赖。
+          </p>
+          <div class="zj-hero-actions">
+            <a href="#zjFocus" class="zj-btn zj-btn-primary">进入影像焦点</a>
+            <a href="#zjCreators" class="zj-btn zj-btn-ghost">认识创作者</a>
+            <button class="zj-btn zj-btn-gold" data-zj-open="submit">投稿与合作</button>
+          </div>
+          <div class="zj-hero-stats">
+            <div>
+              <div class="zj-stat-num" data-zj-count="1286">0<small>+</small></div>
+              <div class="zj-stat-label">原创影像作品</div>
+            </div>
+            <div>
+              <div class="zj-stat-num" data-zj-count="86">0<small>万</small></div>
+              <div class="zj-stat-label">社区关注用户</div>
+            </div>
+            <div>
+              <div class="zj-stat-num" data-zj-count="9">0<small>年</small></div>
+              <div class="zj-stat-label">品牌持续运营</div>
+            </div>
+          </div>
+        </div>
+        <div class="zj-hero-visual">
+          <div class="zj-hero-cover">
+            <svg viewBox="0 0 640 400" role="img" aria-label="警花张津渝品牌主视觉：夜色城市与坚守岗位的剪影">
+              <defs>
+                <linearGradient id="zjHeroSky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#1b2c44"/>
+                  <stop offset="0.55" stop-color="#2f4a6d"/>
+                  <stop offset="1" stop-color="#5b7796"/>
+                </linearGradient>
+                <linearGradient id="zjHeroGlow" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#f5c26b" stop-opacity="0.9"/>
+                  <stop offset="1" stop-color="#e9a93b" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="zjHeroMask" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0.55" stop-color="#0c1524" stop-opacity="0"/>
+                  <stop offset="1" stop-color="#0c1524" stop-opacity="0.85"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="400" fill="url(#zjHeroSky)"/>
+              <circle cx="512" cy="86" r="52" fill="url(#zjHeroGlow)"/>
+              <circle cx="512" cy="86" r="26" fill="#f7d99b" opacity="0.9"/>
+              <g opacity="0.55" fill="#16253a">
+                <rect x="40" y="150" width="52" height="180"/>
+                <rect x="104" y="196" width="40" height="134"/>
+                <rect x="156" y="128" width="58" height="202"/>
+                <rect x="228" y="176" width="36" height="154"/>
+                <rect x="440" y="164" width="46" height="166"/>
+                <rect x="498" y="132" width="56" height="198"/>
+                <rect x="566" y="188" width="40" height="142"/>
+              </g>
+              <g fill="#f5c26b" opacity="0.7">
+                <rect x="118" y="210" width="8" height="10"/><rect x="132" y="210" width="8" height="10"/>
+                <rect x="118" y="230" width="8" height="10"/><rect x="132" y="230" width="8" height="10"/>
+                <rect x="172" y="146" width="9" height="11"/><rect x="188" y="146" width="9" height="11"/>
+                <rect x="172" y="168" width="9" height="11"/><rect x="188" y="188" width="9" height="11"/>
+                <rect x="512" y="150" width="9" height="11"/><rect x="528" y="150" width="9" height="11"/>
+                <rect x="512" y="172" width="9" height="11"/><rect x="528" y="194" width="9" height="11"/>
+                <rect x="580" y="204" width="8" height="10"/><rect x="594" y="204" width="8" height="10"/>
+              </g>
+              <path d="M0 330 Q160 296 320 318 T640 306 L640 400 L0 400 Z" fill="#13202f"/>
+              <g fill="#0c1524">
+                <ellipse cx="300" cy="330" rx="86" ry="60"/>
+                <path d="M272 336 q-8-58 26-62 q34 4 26 62 z"/>
+                <circle cx="300" cy="268" r="20"/>
+              </g>
+              <path d="M292 274 h16 v6 h-16 z" fill="#e9a93b"/>
+              <rect x="0" y="330" width="640" height="70" fill="url(#zjHeroMask)"/>
+              <text x="36" y="372" fill="#e9eff7" font-size="17" font-weight="700" letter-spacing="2">夜色中的坚守 · 纪实影像</text>
+            </svg>
+          </div>
+          <div class="zj-hero-float">
+            <span class="zj-hero-float-icon">▶</span>
+            <span>
+              <b>年度专题 · 平凡之光</b>
+              <span>4K 高清 · 正版首发</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="zj-about zj-scroll-offset" id="zjAbout">
+    <div class="zj-wrap zj-about-inner">
+      <div class="zj-about-cols">
+        <aside class="zj-about-aside">
+          <h3>内容坐标</h3>
+          <ul>
+            <li>题材 · 警务纪实</li>
+            <li>调性 · 真实克制</li>
+            <li>形式 · 短片 / 专题</li>
+            <li>更新 · 每周三、六</li>
+            <li>画质 · 4K 高清正版</li>
+          </ul>
+          <p class="zj-aside-note">本页内容为品牌官网公开展示信息，所有影像均由官方或授权创作者发布。</p>
+        </aside>
+        <div class="zj-about-body">
+          <span class="zj-eyebrow">品牌深度解析</span>
+          <h2 class="zj-h2">关于警花张津渝：一个以真实为底色的影像品牌</h2>
+          <p>
+            “警花张津渝”不是一个简单的热词，而是一个持续运营、具备清晰价值主张的视频内容品牌。品牌以真实的一线记录为起点，用镜头语言还原日常中的秩序感与温度感，形成了辨识度极高的内容风格。<b>官方网站</b>是品牌对外发布的核心阵地，承担着作品档案、专题企划、创作者生态与企业动态的集中呈现职责，也是合作方与观众了解品牌的第一入口。
+          </p>
+          <p>
+            在内容结构上，品牌以“人物—现场—回响”三层叙事展开：人物层聚焦一线从业者的个人故事与成长轨迹，呈现职业背后的真实情感；现场层以跟拍与沉浸式记录还原工作场景的细节与节奏，让观众看到秩序感从何而来；回响层则通过访谈、复盘和社区讨论，让影像不止于观看，而成为理解与共识的起点。三层结构互为支撑，构成了平台稳定输出的内容底盘。
+          </p>
+          <div class="zj-about-quote">真实不是粗粝的堆叠，而是经过专业判断后的克制表达——这是品牌九年始终不变的方法论。</div>
+          <p>
+            作为垂直领域的影像品牌，我们坚持<b>原创</b>与<b>正版</b>双底线，所有公开作品均经过授权确认与内容审核，力求在专业性与可看性之间取得平衡。平台的<b>创作者</b>生态采用邀请制与扶持计划并行：一方面邀请具备纪实拍摄经验的作者入驻，另一方面通过创作扶持计划，为年轻影像人提供选题辅导、剪辑支持与发布资源。我们相信，<b>内容生态</b>的健康程度，决定了品牌能走多远。
+          </p>
+          <p>
+            品牌自创立以来，围绕城市巡防、社区服务、应急响应、成长陪伴等主题持续产出<b>精品内容</b>，逐步形成口碑沉淀。我们不追求短期热度，而是以季度为单位规划专题，以年度为单位复盘结构，把“值得信赖”落实在每一次发布中。对观众而言，这里是理解一线工作的窗口；对创作者而言，这里是能被认真对待的表达空间；对合作方而言，这里是具备社会责任感与专业交付能力的长期伙伴。
+          </p>
+          <p>
+            在视觉表达上，品牌采用深蓝为主、琥珀点缀的配色体系：深蓝代表秩序与专业，琥珀代表温度与希望。镜头语言强调自然光与环境声，减少过度修饰，保留现场的呼吸感。这种风格选择并非刻意求异，而是基于对题材的尊重——<b>真实</b>本身就是最有力量的叙事资源。未来，品牌将继续在<b>创新</b>与<b>匠心</b>之间寻找平衡，让每一部作品都经得起回看。
+          </p>
+          <p>
+            如果你第一次来到警花张津渝的<b>官网</b>，建议从“影像焦点”开始，那里汇集了当期最值得关注的作品；随后可以进入“热门内容”，按标签筛选你感兴趣的题材；如果你本身也是影像创作者，欢迎查看创作者矩阵与投稿指南，我们始终为优质表达保留位置。品牌相信，<b>陪伴</b>是最长情的表达方式，而持续的记录，正是陪伴最具体的形态。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影像焦点 -->
+  <section class="zj-section zj-focus zj-scroll-offset" id="zjFocus">
+    <div class="zj-wrap">
+      <div class="zj-section-head">
+        <div>
+          <span class="zj-eyebrow">Editor's Pick</span>
+          <h2 class="zj-h2">影像焦点：本期最值得停留的四部作品</h2>
+          <p class="zj-lead">由品牌编辑部与创作者共同选出，覆盖人物、现场与回响三类叙事，均为正版高清发布。</p>
+        </div>
+        <a href="#zjVideos" class="zj-more-link">查看全部内容 ›</a>
+      </div>
+      <div class="zj-focus-grid">
+        <article class="zj-focus-main">
+          <svg viewBox="0 0 720 420" role="img" aria-label="焦点作品《十六小时·城市夜巡》封面：夜间巡逻车灯与街道光轨">
+            <defs>
+              <linearGradient id="zjF1Bg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#132133"/>
+                <stop offset="0.6" stop-color="#27405f"/>
+                <stop offset="1" stop-color="#3f6088"/>
+              </linearGradient>
+              <linearGradient id="zjF1Trail" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#f5c26b" stop-opacity="0"/>
+                <stop offset="0.5" stop-color="#f5c26b" stop-opacity="0.95"/>
+                <stop offset="1" stop-color="#f5c26b" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="zjF1Trail2" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#b8452f" stop-opacity="0"/>
+                <stop offset="0.5" stop-color="#d9583c" stop-opacity="0.85"/>
+                <stop offset="1" stop-color="#b8452f" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <rect width="720" height="420" fill="url(#zjF1Bg)"/>
+            <g opacity="0.45" fill="#0d1726">
+              <rect x="0" y="120" width="90" height="230"/>
+              <rect x="104" y="170" width="70" height="180"/>
+              <rect x="188" y="140" width="60" height="210"/>
+              <rect x="470" y="150" width="80" height="200"/>
+              <rect x="566" y="112" width="90" height="238"/>
+              <rect x="668" y="182" width="52" height="168"/>
+            </g>
+            <g fill="#f5c26b" opacity="0.55">
+              <rect x="18" y="146" width="10" height="12"/><rect x="40" y="146" width="10" height="12"/>
+              <rect x="18" y="172" width="10" height="12"/><rect x="62" y="196" width="10" height="12"/>
+              <rect x="120" y="196" width="10" height="12"/><rect x="142" y="220" width="10" height="12"/>
+              <rect x="486" y="176" width="10" height="12"/><rect x="508" y="176" width="10" height="12"/>
+              <rect x="486" y="202" width="10" height="12"/><rect x="586" y="140" width="10" height="12"/>
+              <rect x="608" y="164" width="10" height="12"/><rect x="586" y="188" width="10" height="12"/>
+            </g>
+            <path d="M0 320 Q180 292 360 312 T720 300 L720 420 L0 420 Z" fill="#0c1626"/>
+            <path d="M-20 356 Q200 336 420 352 T740 344" stroke="url(#zjF1Trail)" stroke-width="7" fill="none" stroke-linecap="round"/>
+            <path d="M-20 378 Q220 356 460 372 T740 362" stroke="url(#zjF1Trail2)" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <g transform="translate(478 268)">
+              <rect x="-6" y="0" width="10" height="62" rx="4" fill="#8fa4bd"/>
+              <ellipse cx="-30" cy="30" rx="16" ry="11" fill="#f5c26b" opacity="0.9"/>
+              <ellipse cx="24" cy="30" rx="16" ry="11" fill="#f5c26b" opacity="0.9"/>
+              <path d="M-40 12 q20-14 40 0 q-8 22-20 22 q-12 0-20-22 z" fill="#1a2b42"/>
+              <circle cx="-14" cy="-2" r="4" fill="#f5c26b"/>
+            </g>
+            <rect x="0" y="0" width="720" height="420" fill="#0c1524" opacity="0.06"/>
+            <text x="34" y="60" fill="#f5c26b" font-size="14" font-weight="700" letter-spacing="3">专题 · 全 4 集</text>
+          </svg>
+          <div class="zj-focus-overlay">
+            <span class="zj-focus-tag">编辑推荐</span>
+            <h3>十六小时·城市夜巡：跟随一队人的完整轮班</h3>
+            <p>从交接班到清晨收队，四集跟拍记录一段完整的工作周期，保留大量现场环境声与真实对话。</p>
+            <div class="zj-focus-meta">
+              <span>创作者 · 津渝影像组</span><span>正片 4 集</span><span>4K 高清</span><span>更新于 11/16</span>
+            </div>
+          </div>
+        </article>
+        <div class="zj-focus-side">
+          <article class="zj-focus-mini">
+            <div class="zj-focus-mini-img">
+              <svg viewBox="0 0 320 240" role="img" aria-label="作品《她说：一名女警的九年》封面：人物侧影与窗光">
+                <defs>
+                  <linearGradient id="zjF2Bg" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#f4efe6"/>
+                    <stop offset="1" stop-color="#d9cdbb"/>
+                  </linearGradient>
+                </defs>
+                <rect width="320" height="240" fill="url(#zjF2Bg)"/>
+                <rect x="196" y="24" width="86" height="120" fill="#f7f3ea" opacity="0.85"/>
+                <path d="M196 24 L282 24 L282 144 L196 144 Z" fill="none" stroke="#b9a98f" stroke-width="3"/>
+                <path d="M196 84 L282 84" stroke="#b9a98f" stroke-width="3"/>
+                <path d="M239 24 L239 144" stroke="#b9a98f" stroke-width="3"/>
+                <ellipse cx="128" cy="238" rx="94" ry="52" fill="#2b3d55"/>
+                <path d="M96 232 q-6-70 32-74 q38 4 32 74 z" fill="#22364f"/>
+                <circle cx="128" cy="140" r="30" fill="#e8cdb0"/>
+                <path d="M96 136 q4-40 32-40 q28 0 32 40 q-14-16-32-16 q-18 0-32 16 z" fill="#2b2119"/>
+                <path d="M104 140 q24-12 48 0" stroke="#c9a888" stroke-width="2" fill="none"/>
+                <path d="M118 148 q10 6 20 0" stroke="#b5805f" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <text x="24" y="42" fill="#6b5540" font-size="13" font-weight="700" letter-spacing="2">人物访谈</text>
+              </svg>
+            </div>
+            <div class="zj-focus-mini-body">
+              <h3>她说：一名女警的九年</h3>
+              <p>关于选择、坚持与家人的一次长谈。</p>
+              <span class="zj-mini-meta">津渝影像组 · 18 分钟</span>
+            </div>
+          </article>
+          <article class="zj-focus-mini">
+            <div class="zj-focus-mini-img">
+              <svg viewBox="0 0 320 240" role="img" aria-label="作品《社区里的第一百次敲门》封面：门牌与楼道暖光">
+                <defs>
+                  <linearGradient id="zjF3Bg" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#2c4055"/>
+                    <stop offset="1" stop-color="#4f6f8c"/>
+                  </linearGradient>
+                </defs>
+                <rect width="320" height="240" fill="url(#zjF3Bg)"/>
+                <rect x="34" y="40" width="200" height="170" rx="6" fill="#203245" opacity="0.8"/>
+                <rect x="60" y="66" width="80" height="120" rx="4" fill="#33506c"/>
+                <circle cx="128" cy="128" r="7" fill="#f5c26b"/>
+                <rect x="160" y="86" width="52" height="30" rx="4" fill="#e9dfcb"/>
+                <text x="168" y="107" fill="#5b4c34" font-size="16" font-weight="800">302</text>
+                <path d="M250 20 L320 20 L320 110 Z" fill="#f5c26b" opacity="0.18"/>
+                <ellipse cx="262" cy="150" rx="26" ry="34" fill="#1b2b3f"/>
+                <circle cx="262" cy="106" r="15" fill="#e8cdb0"/>
+                <path d="M248 102 q14-16 28 0 q-4-18-14-18 q-10 0-14 18 z" fill="#2b2119"/>
+                <text x="34" y="228" fill="#cfdaea" font-size="12" letter-spacing="2">在地记录</text>
+              </svg>
+            </div>
+            <div class="zj-focus-mini-body">
+              <h3>社区里的第一百次敲门</h3>
+              <p>一件小事被重复一百次之后。</p>
+              <span class="zj-mini-meta">创作者 · 林间纪实 · 12 分钟</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="zj-section zj-section-alt zj-videos zj-scroll-offset" id="zjVideos">
+    <div class="zj-wrap">
+      <div class="zj-section-head">
+        <div>
+          <span class="zj-eyebrow">Trending Now</span>
+          <h2 class="zj-h2">热门内容：按题材发现你关心的现场</h2>
+          <p class="zj-lead">六个精选单元，覆盖人物、现场、科普与幕后。点击标签可快速筛选。</p>
+        </div>
+        <a href="#zjNews" class="zj-more-link">订阅更新 ›</a>
+      </div>
+      <div class="zj-tags-filter" id="zjFilter">
+        <button class="zj-tag-on" data-zj-tag="all">全部</button>
+        <button data-zj-tag="人物">人物访谈</button>
+        <button data-zj-tag="现场">一线现场</button>
+        <button data-zj-tag="科普">知识科普</button>
+        <button data-zj-tag="幕后">创作幕后</button>
+      </div>
+      <div class="zj-video-grid" id="zjVideoGrid">
+
+        <article class="zj-video-card" data-zj-cat="现场">
+          <div class="zj-card-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="视频封面《凌晨四点的路口》">
+              <defs>
+                <linearGradient id="zjV1Bg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#152740"/><stop offset="1" stop-color="#3a5a7d"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="270" fill="url(#zjV1Bg)"/>
+              <circle cx="392" cy="60" r="26" fill="#f5c26b" opacity="0.8"/>
+              <g fill="#0e1b2c" opacity="0.75">
+                <rect x="20" y="96" width="60" height="140"/><rect x="96" y="132" width="46" height="104"/>
+                <rect x="156" y="80" width="56" height="156"/><rect x="366" y="118" width="52" height="118"/>
+                <rect x="430" y="90" width="40" height="146"/>
+              </g>
+              <path d="M0 224 Q120 206 240 218 T480 210 L480 270 L0 270 Z" fill="#0a1524"/>
+              <path d="M0 240 L480 232" stroke="#f5c26b" stroke-width="3" stroke-dasharray="16 12" opacity="0.8"/>
+              <g fill="#f5c26b" opacity="0.6">
+                <rect x="106" y="146" width="7" height="9"/><rect x="122" y="146" width="7" height="9"/>
+                <rect x="106" y="164" width="7" height="9"/><rect x="168" y="96" width="7" height="9"/>
+                <rect x="184" y="116" width="7" height="9"/><rect x="168" y="136" width="7" height="9"/>
+              </g>
+            </svg>
+            <div class="zj-play"><span class="zj-play-icon"></span></div>
+            <span class="zj-cover-tag">一线现场</span>
+            <span class="zj-cover-dur">14:02</span>
+          </div>
+          <div class="zj-card-body">
+            <h3>凌晨四点的路口</h3>
+            <p>一段固定机位与一组跟拍镜头，记录城市最早醒来的那段时间。</p>
+            <div class="zj-card-foot">
+              <span class="zj-avatar" style="background:#2f4a6d">津</span>
+              <span>津渝影像组</span><span>·</span><span>11/14</span>
+            </div>
+            <div class="zj-card-actions">
+              <button class="zj-react" data-zj-like="1" data-zj-count="1284">♡ <span>1284</span></button>
+              <button class="zj-react" data-zj-save="1">☆ 收藏</button>
+              <button class="zj-react" data-zj-copy>⧉ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zj-video-card" data-zj-cat="人物">
+          <div class="zj-card-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="视频封面《新警报到：第一天上岗的手记》">
+              <defs>
+                <linearGradient id="zjV2Bg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#efe6d6"/><stop offset="1" stop-color="#c9b79a"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="270" fill="url(#zjV2Bg)"/>
+              <rect x="30" y="34" width="180" height="200" rx="8" fill="#f8f3e8" opacity="0.9"/>
+              <g stroke="#c7b494" stroke-width="3">
+                <path d="M54 74 H186"/><path d="M54 104 H170"/><path d="M54 134 H182"/><path d="M54 164 H150"/><path d="M54 194 H174"/>
+              </g>
+              <rect x="52" y="54" width="6" height="20" fill="#b8452f"/>
+              <circle cx="334" cy="116" r="40" fill="#e5c8a8"/>
+              <path d="M296 108 q6-46 38-46 q32 0 38 46 q-18-20-38-20 q-20 0-38 20 z" fill="#33261b"/>
+              <path d="M290 270 q0-88 44-88 q44 0 44 88 z" fill="#2b3d55"/>
+              <path d="M312 190 h44 v12 h-44 z" fill="#e9a93b"/>
+            </svg>
+            <div class="zj-play"><span class="zj-play-icon"></span></div>
+            <span class="zj-cover-tag">人物访谈</span>
+            <span class="zj-cover-dur">09:41</span>
+          </div>
+          <div class="zj-card-body">
+            <h3>新警报到：第一天上岗的手记</h3>
+            <p>三位新入职者用手机自述，从紧张到从容的一个月。</p>
+            <div class="zj-card-foot">
+              <span class="zj-avatar" style="background:#b8452f">林</span>
+              <span>林间纪实</span><span>·</span><span>11/12</span>
+            </div>
+            <div class="zj-card-actions">
+              <button class="zj-react" data-zj-like="1" data-zj-count="942">♡ <span>942</span></button>
+              <button class="zj-react" data-zj-save="1">☆ 收藏</button>
+              <button class="zj-react" data-zj-copy>⧉ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zj-video-card" data-zj-cat="科普">
+          <div class="zj-card-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="视频封面《三分钟讲清楚：一份笔录的诞生》">
+              <defs>
+                <linearGradient id="zjV3Bg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#e9f0f7"/><stop offset="1" stop-color="#c3d4e6"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="270" fill="url(#zjV3Bg)"/>
+              <rect x="52" y="30" width="230" height="210" rx="10" fill="#fff" opacity="0.92"/>
+              <g stroke="#9db3cb" stroke-width="3" stroke-linecap="round">
+                <path d="M78 70 H256"/><path d="M78 100 H230"/><path d="M78 130 H250"/><path d="M78 160 H206"/><path d="M78 190 H240"/>
+              </g>
+              <circle cx="352" cy="122" r="52" fill="#2f4a6d"/>
+              <text x="352" y="132" fill="#f5c26b" font-size="34" font-weight="800" text-anchor="middle">3</text>
+              <text x="352" y="158" fill="#cfdaea" font-size="12" text-anchor="middle" letter-spacing="2">分钟</text>
+              <path d="M300 214 h104" stroke="#2f4a6d" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <div class="zj-play"><span class="zj-play-icon"></span></div>
+            <span class="zj-cover-tag">知识科普</span>
+            <span class="zj-cover-dur">03:18</span>
+          </div>
+          <div class="zj-card-body">
+            <h3>三分钟讲清楚：一份笔录的诞生</h3>
+            <p>把专业流程讲成日常语言，这支短片被许多家长转给孩子看。</p>
+            <div class="zj-card-foot">
+              <span class="zj-avatar" style="background:#8a6fbf">知</span>
+              <span>知行影像</span><span>·</span><span>11/10</span>
+            </div>
+            <div class="zj-card-actions">
+              <button class="zj-react" data-zj-like="1" data-zj-count="2310">♡ <span>2310</span></button>
+              <button class="zj-react" data-zj-save="1">☆ 收藏</button>
+              <button class="zj-react" data-zj-copy>⧉ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zj-video-card" data-zj-cat="幕后">
+          <div class="zj-card-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="视频封面《夜巡专题是怎么拍出来的》">
+              <defs>
+                <linearGradient id="zjV4Bg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#232a33"/><stop offset="1" stop-color="#4a5460"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="270" fill="url(#zjV4Bg)"/>
+              <rect x="60" y="80" width="150" height="100" rx="10" fill="#161c24" stroke="#8d98a5" stroke-width="3"/>
+              <circle cx="135" cy="130" r="30" fill="#2b3642" stroke="#b0bcc9" stroke-width="4"/>
+              <circle cx="135" cy="130" r="13" fill="#6c7b8c"/>
+              <path d="M210 108 h56 v44 h-56 z" fill="#2b3642"/>
+              <path d="M266 118 l40-18 v70 l-40-18 z" fill="#3a4652"/>
+              <rect x="330" y="150" width="94" height="70" rx="8" fill="#1c232b"/>
+              <path d="M348 150 v-22 h58 v22" stroke="#c7d2de" stroke-width="4" fill="none"/>
+              <circle cx="377" cy="186" r="18" fill="#e9a93b"/>
+              <text x="60" y="226" fill="#c7d2de" font-size="13" letter-spacing="2">BTS · 幕后手记</text>
+            </svg>
+            <div class="zj-play"><span class="zj-play-icon"></span></div>
+            <span class="zj-cover-tag">创作幕后</span>
+            <span class="zj-cover-dur">11:27</span>
+          </div>
+          <div class="zj-card-body">
+            <h3>夜巡专题是怎么拍出来的</h3>
+            <p>器材、路线与沟通方式：一次坦诚的幕后复盘。</p>
+            <div class="zj-card-foot">
+              <span class="zj-avatar" style="background:#2f4a6d">津</span>
+              <span>津渝影像组</span><span>·</span><span>11/08</span>
+            </div>
+            <div class="zj-card-actions">
+              <button class="zj-react" data-zj-like="1" data-zj-count="768">♡ <span>768</span></button>
+              <button class="zj-react" data-zj-save="1">☆ 收藏</button>
+              <button class="zj-react" data-zj-copy>⧉ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zj-video-card" data-zj-cat="现场">
+          <div class="zj-card-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="视频封面《雨天疏导：一场没有脚本的直播记录》">
+              <defs>
+                <linearGradient id="zjV5Bg" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#4d6579"/><stop offset="1" stop-color="#8fa6b8"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="270" fill="url(#zjV5Bg)"/>
+              <g stroke="#dfe9f2" stroke-width="3" opacity="0.65" stroke-linecap="round">
+                <path d="M50 20 L34 58"/><path d="M110 12 L94 50"/><path d="M170 24 L154 62"/>
+                <path d="M230 16 L214 54"/><path d="M290 26 L274 64"/><path d="M350 14 L334 52"/>
+                <path d="M410 22 L394 60"/><path d="M450 30 L434 68"/>
+              </g>
+              <ellipse cx="240" cy="240" rx="200" ry="26" fill="#2e3f50" opacity="0.7"/>
+              <rect x="196" y="120" width="86" height="104" rx="10" fill="#243547"/>
+              <path d="M204 120 q35-34 70 0" fill="#e9a93b"/>
+              <circle cx="239" cy="176" r="22" fill="#e5c8a8"/>
+              <path d="M214 172 q26-22 50 0" fill="#2b3d55"/>
+              <rect x="262" y="150" width="60" height="10" rx="5" fill="#e9a93b"/>
+              <circle cx="322" cy="155" r="10" fill="#f5c26b"/>
+            </svg>
+            <div class="zj-play"><span class="zj-play-icon"></span></div>
+            <span class="zj-cover-tag">一线现场</span>
+            <span class="zj-cover-dur">26:50</span>
+          </div>
+          <div class="zj-card-body">
+            <h3>雨天疏导：一场没有脚本的直播记录</h3>
+            <p>天气不配合的两小时里，秩序是怎样被维持的。</p>
+            <div class="zj-card-foot">
+              <span class="zj-avatar" style="background:#3f7d6a">城</span>
+              <span>城市观察局</span><span>·</span><span>11/06</span>
+            </div>
+            <div class="zj-card-actions">
+              <button class="zj-react" data-zj-like="1" data-zj-count="1567">♡ <span>1567</span></button>
+              <button class="zj-react" data-zj-save="1">☆ 收藏</button>
+              <button class="zj-react" data-zj-copy>⧉ 分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="zj-video-card" data-zj-cat="人物">
+          <div class="zj-card-cover">
+            <svg viewBox="0 0 480 270" role="img" aria-label="视频封面《母亲、女儿与我：三封信》">
+              <defs>
+                <linearGradient id="zjV6Bg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#f3e6e3"/><stop offset="1" stop-color="#d8bfc0"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="270" fill="url(#zjV6Bg)"/>
+              <g transform="rotate(-8 160 140)">
+                <rect x="92" y="88" width="140" height="96" rx="6" fill="#fffaf4" stroke="#c9a9a4" stroke-width="3"/>
+                <path d="M108 118 H216" stroke="#d9bcb6" stroke-width="3"/>
+                <path d="M108 140 H200" stroke="#d9bcb6" stroke-width="3"/>
+                <path d="M108 162 H180" stroke="#d9bcb6" stroke-width="3"/>
+              </g>
+              <g transform="rotate(7 330 150)">
+                <rect x="262" y="98" width="140" height="96" rx="6" fill="#fffaf4" stroke="#c9a9a4" stroke-width="3"/>
+                <path d="M278 128 H386" stroke="#d9bcb6" stroke-width="3"/>
+                <path d="M278 150 H370" stroke="#d9bcb6" stroke-width="3"/>
+                <path d="M278 172 H350" stroke="#d9bcb6" stroke-width="3"/>
+              </g>
+              <circle cx="240" cy="62" r="20" fill="#b8452f" opacity="0.7"/>
+              <path d="M230 62 h20 M240 52 v20" stroke="#fff" stroke-width="3"/>
+            </svg>
+            <div class="zj-play"><span class="zj-play-icon"></span></div>
+            <span class="zj-cover-tag">人物访谈</span>
+            <span class="zj-cover-dur">16:33</span>
+          </div>
+          <div class="zj-card-body">
+            <h3>母亲、女儿与我：三封信</h3>
+            <p>把难以当面说出口的话，交给镜头来读。</p>
+            <div class="zj-card-foot">
+              <span class="zj-avatar" style="background:#b8452f">林</span>
+              <span>林间纪实</span><span>·</span><span>11/04</span>
+            </div>
+            <div class="zj-card-actions">
+              <button class="zj-react" data-zj-like="1" data-zj-count="3402">♡ <span>3402</span></button>
+              <button class="zj-react" data-zj-save="1">☆ 收藏</button>
+              <button class="zj-react" data-zj-copy>⧉ 分享</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="zj-section zj-creators zj-scroll-offset" id="zjCreators">
+    <div class="zj-wrap">
+      <div class="zj-section-head">
+        <div>
+          <span class="zj-eyebrow">Creators</span>
+          <h2 class="zj-h2">创作者矩阵：让专业的人讲专业的事</h2>
+          <p class="zj-lead">平台采用邀请制与扶持计划并行，创作者均经过授权与内容规范确认。</p>
+        </div>
+        <button class="zj-btn zj-btn-ghost" data-zj-open="submit">申请入驻</button>
+      </div>
+      <div class="zj-creator-grid">
+
+        <article class="zj-creator-card">
+          <div class="zj-creator-head">
+            <span class="zj-creator-avatar" style="background:linear-gradient(140deg,#22364f,#3f6088)">津</span>
+            <div>
+              <h3>津渝影像组</h3>
+              <span class="zj-creator-field">纪实跟拍 · 现场叙事</span>
+            </div>
+          </div>
+          <p>品牌自建创作团队，主攻长周期跟拍与人物访谈，强调自然光与现场声，作品以克制、耐看著称。</p>
+          <div class="zj-creator-nums">
+            <span><b>128</b>作品</span>
+            <span><b>21.6万</b>关注</span>
+          </div>
+          <button class="zj-creator-btn" data-zj-author="津渝影像组|品牌自建创作团队，主攻长周期跟拍与人物访谈，累计发布 128 部原创影像作品，代表作《十六小时》系列。">查看作者档案</button>
+        </article>
+
+        <article class="zj-creator-card">
+          <div class="zj-creator-head">
+            <span class="zj-creator-avatar" style="background:linear-gradient(140deg,#b8452f,#d9583c)">林</span>
+            <div>
+              <h3>林间纪实</h3>
+              <span class="zj-creator-field">人物访谈 · 情感故事</span>
+            </div>
+          </div>
+          <p>擅长在安静的空间里完成长谈，作品多为 15 分钟以上的中长片，关注普通人的选择与转折。</p>
+          <div class="zj-creator-nums">
+            <span><b>64</b>作品</span>
+            <span><b>12.3万</b>关注</span>
+          </div>
+          <button class="zj-creator-btn" data-zj-author="林间纪实|独立影像作者，专注人物访谈与情感故事，代表作《她说》《母亲、女儿与我》系列。">查看作者档案</button>
+        </article>
+
+        <article class="zj-creator-card">
+          <div class="zj-creator-head">
+            <span class="zj-creator-avatar" style="background:linear-gradient(140deg,#3f7d6a,#5ea48c)">城</span>
+            <div>
+              <h3>城市观察局</h3>
+              <span class="zj-creator-field">城市探索 · 在地文化</span>
+            </div>
+          </div>
+          <p>以城市为样本做长期观察，偏好雨雪天气与清晨时段，用“无脚本”方式记录真实秩序。</p>
+          <div class="zj-creator-nums">
+            <span><b>92</b>作品</span>
+            <span><b>17.8万</b>关注</span>
+          </div>
+          <button class="zj-creator-btn" data-zj-author="城市观察局|城市探索类创作团队，以长期观察方法记录城市运行细节，代表作《雨天疏导》《早市六点》。">查看作者档案</button>
+        </article>
+
+        <article class="zj-creator-card">
+          <div class="zj-creator-head">
+            <span class="zj-creator-avatar" style="background:linear-gradient(140deg,#8a6fbf,#a98fd8)">知</span>
+            <div>
+              <h3>知行影像</h3>
+              <span class="zj-creator-field">知识科普 · 实用技巧</span>
+            </div>
+          </div>
+          <p>把专业内容翻译成日常语言，擅长三分钟结构与信息图表达，多部作品被用于公开教育场景。</p>
+          <div class="zj-creator-nums">
+            <span><b>154</b>作品</span>
+            <span><b>26.4万</b>关注</span>
+          </div>
+          <button class="zj-creator-btn" data-zj-author="知行影像|知识科普创作团队，专注专业内容的通俗化表达，代表作《三分钟讲清楚》系列。">查看作者档案</button>
+        </article>
+
+        <article class="zj-creator-card">
+          <div class="zj-creator-head">
+            <span class="zj-creator-avatar" style="background:linear-gradient(140deg,#c98b2e,#e9a93b)">少</span>
+            <div>
+              <h3>少年笔记载</h3>
+              <span class="zj-creator-field">成长陪伴 · 日常记录</span>
+            </div>
+          </div>
+          <p>以年轻人视角记录训练、考试与第一次独立完成任务的过程，节奏轻快，评论区互动活跃。</p>
+          <div class="zj-creator-nums">
+            <span><b>73</b>作品</span>
+            <span><b>9.7万</b>关注</span>
+          </div>
+          <button class="zj-creator-btn" data-zj-author="少年笔记载|青年创作者，记录成长节点与日常训练，代表作《第一天上岗的手记》系列。">查看作者档案</button>
+        </article>
+
+        <article class="zj-creator-card">
+          <div class="zj-creator-head">
+            <span class="zj-creator-avatar" style="background:linear-gradient(140deg,#4f6f8c,#7c99b4)">镜</span>
+            <div>
+              <h3>镜像工坊</h3>
+              <span class="zj-creator-field">创作幕后 · 剪辑教学</span>
+            </div>
+          </div>
+          <p>从器材到剪辑全流程拆解，喜欢公开失败素材与修改过程，被社区称为“最不怕露怯的技术派”。</p>
+          <div class="zj-creator-nums">
+            <span><b>109</b>作品</span>
+            <span><b>14.2万</b>关注</span>
+          </div>
+          <button class="zj-creator-btn" data-zj-author="镜像工坊|幕后技术类创作者，专注拍摄与剪辑教学，代表作《夜巡专题是怎么拍出来的》。">查看作者档案</button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌故事 -->
+  <section class="zj-section zj-story zj-scroll-offset" id="zjStory">
+    <div class="zj-wrap">
+      <div class="zj-story-grid">
+        <div>
+          <span class="zj-eyebrow">Brand Story</span>
+          <h2 class="zj-h2">品牌故事：九年时间，只做一件事</h2>
+          <p>
+            警花张津渝品牌起步于一次偶然的记录。九年前，团队用一台借来的相机拍下了一段不足五分钟的执勤日常，没想到那支粗糙的短片被大量转发。评论里出现最多的一句话是：“原来是这样。”
+          </p>
+          <p>
+            那句话成为品牌的起点。我们意识到，<b>真实</b>的影像具备跨越误解的力量。于是团队决定把这件事长期做下去：不做戏剧化处理，不预设结论，只把过程完整地呈现出来。九年里，品牌从一个人变成一支队伍，从零散短片变成季度专题，但方法论没有变。
+          </p>
+          <p>
+            今天的警花张津渝，是一个具备完整内容生产链路的视频品牌：选题会、现场跟拍、后期制作、审核发布、社区反馈，每个环节都有明确标准。我们视<b>社会责任</b>为创作前提，视<b>用户至上</b>为运营准则，也视<b>创新</b>为不设边界的自我要求。
+          </p>
+          <div class="zj-story-values">
+            <div class="zj-value-chip"><b>真实记录</b>不摆拍，不预设，把现场交还给观众。</div>
+            <div class="zj-value-chip"><b>专业交付</b>从脚本到成片，每个环节都可追溯。</div>
+            <div class="zj-value-chip"><b>长期主义</b>以年为单位规划，不追逐短期热度。</div>
+            <div class="zj-value-chip"><b>开放共生</b>与创作者一起成长，共享内容生态。</div>
+          </div>
+        </div>
+        <div class="zj-story-visual">
+          <div class="zj-story-img">
+            <svg viewBox="0 0 480 260" role="img" aria-label="品牌故事配图：九周年纪念影像墙">
+              <defs>
+                <linearGradient id="zjS1Bg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#16263c"/><stop offset="1" stop-color="#3a5a7d"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="260" fill="url(#zjS1Bg)"/>
+              <g fill="#f5c26b" opacity="0.85">
+                <rect x="34" y="40" width="92" height="60" rx="5"/>
+                <rect x="146" y="40" width="92" height="60" rx="5" opacity="0.6"/>
+                <rect x="258" y="40" width="92" height="60" rx="5" opacity="0.4"/>
+                <rect x="370" y="40" width="76" height="60" rx="5" opacity="0.72"/>
+                <rect x="34" y="122" width="92" height="60" rx="5" opacity="0.5"/>
+                <rect x="146" y="122" width="92" height="60" rx="5" opacity="0.78"/>
+                <rect x="258" y="122" width="92" height="60" rx="5"/>
+                <rect x="370" y="122" width="76" height="60" rx="5" opacity="0.55"/>
+              </g>
+              <g fill="#16263c" opacity="0.55">
+                <circle cx="80" cy="70" r="10"/><circle cx="192" cy="70" r="10"/><circle cx="304" cy="70" r="10"/>
+                <circle cx="80" cy="152" r="10"/><circle cx="192" cy="152" r="10"/><circle cx="304" cy="152" r="10"/>
+              </g>
+              <text x="34" y="226" fill="#dfe9f2" font-size="15" font-weight="700" letter-spacing="3">2017 — 2026 · 九年影像档案</text>
+              <path d="M34 242 H446" stroke="#f5c26b" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="zj-story-img">
+            <svg viewBox="0 0 480 200" role="img" aria-label="品牌故事配图：创作者围坐讨论选题的场景">
+              <defs>
+                <linearGradient id="zjS2Bg" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#2a2018"/><stop offset="1" stop-color="#4b3a29"/>
+                </linearGradient>
+              </defs>
+              <rect width="480" height="200" fill="url(#zjS2Bg)"/>
+              <ellipse cx="240" cy="176" rx="180" ry="20" fill="#1b140f" opacity="0.7"/>
+              <rect x="150" y="112" width="180" height="52" rx="10" fill="#5e4834"/>
+              <g fill="#e7d3b6">
+                <circle cx="128" cy="106" r="18"/><circle cx="240" cy="98" r="18"/><circle cx="352" cy="106" r="18"/>
+              </g>
+              <path d="M108 178 q0-58 20-58 q20 0 20 58 z" fill="#c8a578"/>
+              <path d="M220 170 q0-58 20-58 q20 0 20 58 z" fill="#d9b98c"/>
+              <path d="M332 178 q0-58 20-58 q20 0 20 58 z" fill="#c8a578"/>
+              <circle cx="240" cy="42" r="16" fill="#f5c26b" opacity="0.75"/>
+              <path d="M232 42 h16 M240 34 v16" stroke="#2a2018" stroke-width="3"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="zj-section zj-reviews zj-scroll-offset" id="zjReviews">
+    <div class="zj-wrap">
+      <div class="zj-section-head">
+        <div>
+          <span class="zj-eyebrow">Community Voice</span>
+          <h2 class="zj-h2">社区回响：来自观众与创作者的真实反馈</h2>
+          <p class="zj-lead">评论由社区用户公开发布，品牌仅做必要整理，保留原始语气。</p>
+        </div>
+      </div>
+      <div class="zj-review-grid">
+        <article class="zj-review-card">
+          <div class="zj-review-stars">★★★★★</div>
+          <p>《十六小时》我看了两遍。第一遍看流程，第二遍注意到的全是细节——交接班时那几秒钟的沉默，比任何台词都有分量。</p>
+          <div class="zj-review-user">
+            <span class="zj-avatar" style="background:#2f4a6d">周</span>
+            <span><b>周先生</b><span>社区用户 · 关注 2 年</span></span>
+          </div>
+        </article>
+        <article class="zj-review-card">
+          <div class="zj-review-stars">★★★★★</div>
+          <p>作为家长，我把《三分钟讲清楚》系列转给孩子看，比我自己解释半天管用。希望这类科普能一直更新下去。</p>
+          <div class="zj-review-user">
+            <span class="zj-avatar" style="background:#b8452f">李</span>
+            <span><b>李明慧</b><span>社区用户 · 家长</span></span>
+          </div>
+        </article>
+        <article class="zj-review-card">
+          <div class="zj-review-stars">★★★★☆</div>
+          <p>幕后那期很实在，器材清单没有藏着掖着。唯一的小建议是希望多讲讲收音，现场环境声真的很难处理。</p>
+          <div class="zj-review-user">
+            <span class="zj-avatar" style="background:#3f7d6a">阿</span>
+            <span><b>阿泽</b><span>独立影像创作者</span></span>
+          </div>
+        </article>
+        <article class="zj-review-card">
+          <div class="zj-review-stars">★★★★★</div>
+          <p>从投稿到收到回复只用了四天，编辑给的意见很具体，不是那种模板回复。这一点让人觉得被认真对待。</p>
+          <div class="zj-review-user">
+            <span class="zj-avatar" style="background:#8a6fbf">小</span>
+            <span><b>小满</b><span>社区投稿作者</span></span>
+          </div>
+        </article>
+        <article class="zj-review-card">
+          <div class="zj-review-stars">★★★★★</div>
+          <p>我父亲也是这行，以前很少聊工作。看完《她说》之后我们第一次聊了很久，谢谢这部片子。</p>
+          <div class="zj-review-user">
+            <span class="zj-avatar" style="background:#c98b2e">陈</span>
+            <span><b>陈一鸣</b><span>社区用户 · 关注 1 年</span></span>
+          </div>
+        </article>
+        <article class="zj-review-card">
+          <div class="zj-review-stars">★★★★☆</div>
+          <p>画面质感很稳，配色也舒服。如果能加一些时间轴字幕，对不了解流程的观众会更友好。</p>
+          <div class="zj-review-user">
+            <span class="zj-avatar" style="background:#4f6f8c">吴</span>
+            <span><b>吴桐</b><span>剪辑从业者</span></span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="zj-section zj-section-alt zj-faq zj-scroll-offset" id="zjFaq">
+    <div class="zj-wrap">
+      <div class="zj-section-head">
+        <div>
+          <span class="zj-eyebrow">Help Center</span>
+          <h2 class="zj-h2">常见问题：关于内容、授权与投稿</h2>
+          <p class="zj-lead">这里整理了社区最常提出的疑问，若未解决可在联系区留言。</p>
+        </div>
+      </div>
+      <div class="zj-faq-list">
+        <details class="zj-faq-item">
+          <summary>品牌官网的内容多久更新一次？</summary>
+          <div class="zj-faq-answer">常规内容每周三、周六更新；专题企划按季度发布，通常集中在季末两周。企业动态与更新日志会随发布节奏同步维护。</div>
+        </details>
+        <details class="zj-faq-item">
+          <summary>我想投稿，需要满足什么条件？</summary>
+          <div class="zj-faq-answer">投稿需为原创或已获完整授权的影像作品，题材与品牌方向契合，画质不低于 1080P，并附上简要拍摄说明。通过初审后，编辑会联系作者沟通修改与发布安排。</div>
+        </details>
+        <details class="zj-faq-item">
+          <summary>作品授权与版权如何确认？</summary>
+          <div class="zj-faq-answer">所有公开发布作品均需完成授权确认，品牌保留内容使用范围与期限的书面记录。合作方如需引用，请通过联系入口提交申请，我们会提供正式授权说明。</div>
+        </details>
+        <details class="zj-faq-item">
+          <summary>创作者扶持计划如何报名？</summary>
+          <div class="zj-faq-answer">扶持计划每季度开放一次，报名入口在“企业动态”中发布。需提交个人简介、代表作品与选题构想，入选后将获得选题辅导、剪辑支持与发布资源。</div>
+        </details>
+        <details class="zj-faq-item">
+          <summary>可以使用页面内容用于教学或公益场景吗？</summary>
+          <div class="zj-faq-answer">非商业的教学与公益使用，可在保留完整片尾信息与来源说明的前提下申请，我们会根据具体用途提供相应许可。商业用途需单独沟通。</div>
+        </details>
+        <details class="zj-faq-item">
+          <summary>页面上的数据统计口径是什么？</summary>
+          <div class="zj-faq-answer">作品数为官方发布与授权发布合计；关注用户为社区账户去重统计；运营年限自品牌首个公开发布作品起算，均在每季度末更新。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 + 联系 -->
+  <section class="zj-section zj-news zj-scroll-offset" id="zjNews">
+    <div class="zj-wrap">
+      <div class="zj-news-grid">
+        <div>
+          <span class="zj-eyebrow">Newsroom</span>
+          <h2 class="zj-h2">企业动态：官方发布与内容更新</h2>
+          <div class="zj-timeline">
+            <article class="zj-tl-item">
+              <div class="zj-tl-date">2026 / 11 / 16</div>
+              <h3>专题《十六小时·城市夜巡》全 4 集完结</h3>
+              <p>历时十一天跟拍，累计素材 9 小时，最终成片 4 集。专题页已同步上线幕后手记与拍摄清单。</p>
+            </article>
+            <article class="zj-tl-item">
+              <div class="zj-tl-date">2026 / 11 / 09</div>
+              <h3>创作者扶持计划第 3 期开放报名</h3>
+              <p>本期主题为“身边的秩序”，面向纪实方向创作者，报名截止 12 月 20 日，入选名单于次年 1 月公布。</p>
+            </article>
+            <article class="zj-tl-item">
+              <div class="zj-tl-date">2026 / 10 / 28</div>
+              <h3>品牌年度短片《平凡之光》发布预告</h3>
+              <p>年度短片以四位不同岗位的普通人为线索，正片将于 12 月中旬在官网首发，支持 4K 高清播放。</p>
+            </article>
+            <article class="zj-tl-item">
+              <div class="zj-tl-date">2026 / 10 / 12</div>
+              <h3>内容审核规范 2.0 正式启用</h3>
+              <p>新增授权材料留存与二次引用说明要求，进一步明确原创与正版标准，保障创作者与观众双方权益。</p>
+            </article>
+          </div>
+        </div>
+        <aside class="zj-contact-card" id="zjContact">
+          <h3>联系与合作</h3>
+          <p>内容授权、联合企划、媒体采访与投稿咨询，欢迎通过以下方式与我们取得联系。</p>
+          <div class="zj-contact-row"><span>合作邮箱</span><b>brand@zhangjinyu-film.cn</b></div>
+          <div class="zj-contact-row"><span>投稿咨询</span><b>submit@zhangjinyu-film.cn</b></div>
+          <div class="zj-contact-row"><span>办公时间</span><b>周一至周五 10:00–18:00</b></div>
+          <div class="zj-contact-row"><span>内容更新</span><b>每周三、周六</b></div>
+          <div class="zj-contact-actions">
+            <button class="zj-btn zj-btn-gold" data-zj-open="submit">提交投稿</button>
+            <button class="zj-btn zj-btn-ghost" data-zj-open="report" style="background:transparent;color:#e9eff7;border-color:rgba(255,255,255,.3)">反馈建议</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- 页脚 -->
+<footer class="zj-footer">
+  <div class="zj-wrap">
+    <div class="zj-footer-grid">
+      <div>
+        <div class="zj-footer-brand">
+          <span class="zj-brand-mark">津</span>
+          <b>警花张津渝</b>
+        </div>
+        <p class="zj-footer-desc">
+          警花张津渝官方网站，专注警务纪实影像与真实人物故事的视频品牌平台。深耕垂直领域，持续运营原创内容生态，坚持正版、高清与专业标准，努力成为用户首选的纪实影像社区。
+        </p>
+        <p class="zj-footer-desc" style="margin-bottom:0">品牌口号：以真实为镜，记录每一份坚守与温度。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#zjFocus">影像焦点</a></li>
+          <li><a href="#zjVideos">热门内容</a></li>
+          <li><a href="#zjCreators">创作者矩阵</a></li>
+          <li><a href="#zjReviews">社区回响</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#zjStory">品牌故事</a></li>
+          <li><a href="#zjNews">企业动态</a></li>
+          <li><a href="#zjFaq">帮助中心</a></li>
+          <li><a href="#zjContact">联系与合作</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与共建</h4>
+        <ul>
+          <li><a href="#zjContact" data-zj-open="submit">作品投稿</a></li>
+          <li><a href="#zjContact" data-zj-open="submit">创作者入驻</a></li>
+          <li><a href="#zjContact" data-zj-open="report">反馈建议</a></li>
+          <li><a href="#zjTop">回到首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="zj-footer-info">
+      <span>© 2017–2026 警花张津渝 品牌官网 · 版权所有 · 持续运营中</span>
+      <span>内容均为原创或授权发布 · 正版高清 · 值得信赖</span>
+    </div>
+  </div>
+</footer>
+
+<button class="zj-backtop" id="zjBackTop" aria-label="回到顶部">↑</button>
+<div class="zj-toast" id="zjToast" role="status" aria-live="polite"></div>
+
+<!-- 弹窗 -->
+<div class="zj-modal" id="zjModal" role="dialog" aria-modal="true" aria-labelledby="zjModalTitle">
+  <div class="zj-modal-card">
+    <button class="zj-modal-close" id="zjModalClose" aria-label="关闭弹窗">×</button>
+    <div id="zjModalContent"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 工具 ---------- */
+  var toastEl = document.getElementById('zjToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('zj-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('zj-show'); }, 2200);
+  }
+
+  /* ---------- 公告关闭 ---------- */
+  var announce = document.getElementById('zjAnnounce');
+  var announceBtn = document.getElementById('zjAnnounceClose');
+  announceBtn.addEventListener('click', function(){
+    announce.style.display = 'none';
+    toast('已收起今日公告');
+  });
+
+  /* ---------- 移动端导航 ---------- */
+  var nav = document.getElementById('zjNav');
+  var menuToggle = document.getElementById('zjMenuToggle');
+  menuToggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('zj-nav-open');
+    menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('zj-nav-open');
+      menuToggle.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* ---------- 搜索前端反馈 ---------- */
+  var searchForm = document.getElementById('zjSearchForm');
+  var searchInput = document.getElementById('zjSearchInput');
+  var hintBox = document.getElementById('zjHintBox');
+  var searchData = [
+    {t:'十六小时·城市夜巡', k:'专题 夜巡 现场'},
+    {t:'她说：一名女警的九年', k:'人物 访谈 成长'},
+    {t:'三分钟讲清楚：一份笔录的诞生', k:'科普 笔录 知识'},
+    {t:'夜巡专题是怎么拍出来的', k:'幕后 剪辑 器材'},
+    {t:'社区里的第一百次敲门', k:'在地 社区 记录'},
+    {t:'林间纪实', k:'创作者 人物访谈'},
+    {t:'城市观察局', k:'创作者 城市探索'},
+    {t:'创作者扶持计划', k:'投稿 报名 合作'}
+  ];
+  function renderHint(kw){
+    if(!kw){ hintBox.classList.remove('zj-show'); hintBox.innerHTML=''; return; }
+    var res = searchData.filter(function(item){
+      return item.t.indexOf(kw) > -1 || item.k.indexOf(kw) > -1;
+    }).slice(0,5);
+    if(res.length === 0){
+      hintBox.innerHTML = '未找到与“' + kw + '”直接匹配的内容，可尝试“现场”“人物”或“科普”。';
+    }else{
+      hintBox.innerHTML = '为你找到 ' + res.length + ' 条相关内容：' + res.map(function(r){ return '<b style="color:#22364f">' + r.t + '</b>'; }).join(' · ');
+    }
+    hintBox.classList.add('zj-show');
+  }
+  searchInput.addEventListener('input', function(){
+    renderHint(searchInput.value.trim());
+  });
+  searchForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var kw = searchInput.value.trim();
+    if(!kw){ toast('请输入关键词后再搜索'); return; }
+    renderHint(kw);
+    toast('已在站内检索“' + kw + '”');
+  });
+
+  /* ---------- 标签筛选 ---------- */
+  var filter = document.getElementById('zjFilter');
+  var cards = document.querySelectorAll('#zjVideoGrid .zj-video-card');
+  filter.addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-zj-tag]');
+    if(!btn) return;
+    Array.prototype.forEach.call(filter.querySelectorAll('button'), function(b){ b.classList.remove('zj-tag-on'); });
+    btn.classList.add('zj-tag-on');
+    var tag = btn.getAttribute('data-zj-tag');
+    cards.forEach(function(card){
+      var cat = card.getAttribute('data-zj-cat');
+      card.style.display = (tag === 'all' || cat === tag) ? '' : 'none';
+    });
+    toast(tag === 'all' ? '显示全部内容' : '已筛选：' + btn.textContent.trim());
+  });
+
+  /* ---------- 点赞 / 收藏 / 复制 ---------- */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-zj-like]');
+    if(likeBtn){
+      var span = likeBtn.querySelector('span');
+      var base = parseInt(likeBtn.getAttribute('data-zj-count'), 10);
+      var liked = likeBtn.classList.toggle('zj-liked');
+      span.textContent = liked ? base + 1 : base;
+      toast(liked ? '已点赞，感谢支持' : '已取消点赞');
+      return;
+    }
+
+    var saveBtn = e.target.closest('[data-zj-save]');
+    if(saveBtn){
+      var saved = saveBtn.classList.toggle('zj-saved');
+      saveBtn.innerHTML = saved ? '♥ 已收藏' : '☆ 收藏';
+      toast(saved ? '已收藏到个人清单' : '已取消收藏');
+      return;
+    }
+
+    var copyBtn = e.target.closest('[data-zj-copy]');
+    if(copyBtn){
+      var url = 'https://www.zhangjinyu-film.cn/';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){ toast('页面链接已复制'); }).catch(function(){ toast('复制失败，请手动复制地址'); });
+      }else{
+        toast('页面链接已生成，可在浏览器地址栏复制');
+      }
+      return;
+    }
+
+    /* 打开弹窗 */
+    var opener = e.target.closest('[data-zj-open]');
+    if(opener){
+      e.preventDefault();
+      openModal(opener.getAttribute('data-zj-open'));
+      return;
+    }
+
+    var authorBtn = e.target.closest('[data-zj-author]');
+    if(authorBtn){
+      openAuthor(authorBtn.getAttribute('data-zj-author'));
+    }
+  });
+
+  /* ---------- 弹窗 ---------- */
+  var modal = document.getElementById('zjModal');
+  var modalContent = document.getElementById('zjModalContent');
+  var modalClose = document.getElementById('zjModalClose');
+  function closeModal(){
+    modal.classList.remove('zj-show');
+    document.body.style.overflow = '';
+  }
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){
+    if(e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModal();
+  });
+
+  function openModal(type){
+    var html = '';
+    if(type === 'submit'){
+      html = '<h3 id="zjModalTitle">投稿与合作</h3>' +
+        '<p>请填写基本信息，编辑会在五个工作日内回复。作品需为原创或已获完整授权。</p>' +
+        '<div class="zj-modal-field"><label>称呼</label><input type="text" placeholder="你的名字或团队名"></div>' +
+        '<div class="zj-modal-field"><label>联系邮箱</label><input type="email" placeholder="用于接收回复"></div>' +
+        '<div class="zj-modal-field"><label>选题说明</label><textarea rows="3" placeholder="简述作品内容、时长与拍摄背景"></textarea></div>' +
+        '<button class="zj-btn zj-btn-primary" id="zjModalSubmit">提交资料</button>';
+    }else if(type === 'report'){
+      html = '<h3 id="zjModalTitle">反馈建议</h3>' +
+        '<p>你的意见会直接进入内容运营团队。我们会认真阅读每一条反馈。</p>' +
+        '<div class="zj-modal-field"><label>反馈类型</label><input type="text" placeholder="内容建议 / 播放体验 / 其他"></div>' +
+        '<div class="zj-modal-field"><label>详细说明</label><textarea rows="3" placeholder="请描述你遇到的问题或建议"></textarea></div>' +
+        '<button class="zj-btn zj-btn-gold" id="zjModalSubmit">发送反馈</button>';
+    }
+    modalContent.innerHTML = html;
+    modal.classList.add('zj-show');
+    document.body.style.overflow = 'hidden';
+    var submit = document.getElementById('zjModalSubmit');
+    if(submit){
+      submit.addEventListener('click', function(){
+        closeModal();
+        toast(type === 'submit' ? '资料已提交，感谢你的信任' : '反馈已收到，感谢你的建议');
+      });
+    }
+  }
+
+  function openAuthor(data){
+    var parts = data.split('|');
+    var name = parts[0] || '创作者';
+    var desc = parts[1] || '';
+    modalContent.innerHTML =
+      '<h3 id="zjModalTitle">' + name + '</h3>' +
+      '<p>' + desc + '</p>' +
+      '<div class="zj-contact-row" style="border-bottom:1px dashed #d8e0ea;color:#4b5a6d"><span style="color:#4b5a6d">内容方向</span><b style="color:#22364f">纪实影像 · 原创首发</b></div>' +
+      '<div class="zj-contact-row" style="color:#4b5a6d"><span style="color:#4b5a6d">合作方式</span><b style="color:#22364f">联合企划 / 授权发布</b></div>' +
+      '<button class="zj-btn zj-btn-primary" id="zjModalFollow" style="margin-top:16px">关注该创作者</button>';
+    modal.classList.add('zj-show');
+    document.body.style.overflow = 'hidden';
+    var follow = document.getElementById('zjModalFollow');
+    if(follow){
+      follow.addEventListener('click', function(){
+        closeModal();
+        toast('已关注 ' + name + '，更新可在此查看');
+      });
+    }
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var backTop = document.getElementById('zjBackTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ backTop.classList.add('zj-show'); }
+    else{ backTop.classList.remove('zj-show'); }
+  });
+  backTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = document.querySelectorAll('[data-zj-count]');
+  var counted = false;
+  function runCounters(){
+    if(counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-zj-count'), 10);
+      var small = el.querySelector('small');
+      var suffix = small ? small.outerHTML : '';
+      var start = null;
+      var dur = 1200;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var val = Math.floor(target * (1 - Math.pow(1 - p, 3)));
+        el.innerHTML = val + suffix;
+        if(p < 1) requestAnimationFrame(step);
+        else el.innerHTML = target + suffix;
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){ runCounters(); io.disconnect(); }
+      });
+    }, {threshold:0.3});
+    var heroStats = document.querySelector('.zj-hero-stats');
+    if(heroStats) io.observe(heroStats);
+  }else{
+    runCounters();
+  }
+
+  /* ---------- 导航高亮 ---------- */
+  var sections = document.querySelectorAll('main section[id]');
+  var navLinks = document.querySelectorAll('.zj-nav a');
+  if('IntersectionObserver' in window){
+    var so = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          var id = entry.target.getAttribute('id');
+          navLinks.forEach(function(a){
+            a.classList.toggle('zj-nav-active', a.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, {rootMargin:'-40% 0px -55% 0px'});
+    sections.forEach(function(s){ so.observe(s); });
+  }
+
+})();
+</script>
+</body>
+                  </html>
